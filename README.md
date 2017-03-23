@@ -1,4 +1,5 @@
-#SailfishOS/MerSDK build engine as Docker container
+SailfishOS/MerSDK build engine as Docker container
+--------------------------------------------------
 
 I have been struggling with the SailfishOS Build Engine VM for quite some time. 4 out of 5 SailfishOS builds of QuasarMX would fail because the Shared Folder (vboxsf) mechanism in VirtualBox at some point starts to corrupt files on my system, even though the system’s RAM and storage are perfectly fine. Since QuasarMX heavily relies on qmlpp (see previous post) to work with QtQuick 2, a lot of files will be touched during compilation. For this, vboxsf is both unreliable and slow (!).
 
