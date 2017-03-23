@@ -27,7 +27,11 @@ Now use rsync to copy the rootfs from the VM:
 
 This will take a while. Go, have dinner or get a cup of tea.
 
-Once finished, shut down the build engine VM and start your new Dockerized build engine via
+Once finished, make sure to un-sudo, i.e. become a unpriviledged user again:
+
+    exit
+
+Now, shut down the build engine VM and start your new Dockerized build engine via
 
     sudo ./run-sailfishos-buildengine.sh
 
